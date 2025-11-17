@@ -34,41 +34,10 @@ Compare results and highlight how imaging and clinical data provide complementar
 Identify model limitations and propose future improvements for multimodal diagnostic systems.
 
 # Datasets Used 
-1. Clinical Tabular Dataset – Kaggle CVD Dataset
+This project uses two complementary datasets: a clinical tabular dataset and a cardiac MRI imaging dataset. The clinical dataset, sourced from Kaggle, contains 70,000 patient records with 12 medical, demographic, and lifestyle attributes, including age, gender, blood pressure, cholesterol, glucose, BMI, smoking habits, alcohol use, and physical activity. These features were collected during routine medical examinations and provide essential risk indicators for cardiovascular disease. Several preprocessing steps were applied, such as converting age from days to years, encoding categorical variables, engineering BMI from height and weight, removing outliers in systolic and diastolic values, and performing univariate, bivariate, and multivariate analyses to understand feature relationships.
 
-150 patient cine-MRI volumes (ED & ES phases)
+The second dataset comes from the ACDC Challenge (Automated Cardiac Diagnosis Challenge), containing 150 cardiac MRI scans grouped into five diagnostic categories—Normal, DCM, HCM, MINF, and ARV. Each patient includes end-diastolic (ED) and end-systolic (ES) cine-MRI volumes, allowing analysis of cardiac function across phases. The dataset is clean, well-balanced, and includes segmentation masks and metadata. MRI volumes were preprocessed through spatial resampling to 128×128×8, z-score normalization, label encoding, and structuring into two-channel 3D tensors for deep learning. Together, these datasets provide both structured clinical indicators and anatomical imaging information, enabling robust machine-learning and deep-learning approaches for cardiovascular disease prediction.
 
-5 diagnostic categories (Normal, DCM, HCM, MINF, ARV)
-
-Preprocessing:
-
-Resampled to 128 × 128 × 8
-
-Z-score intensity normalization
-
-Label encoding
-
-Two-channel MRI tensor (ED + ES)
-
-Train/val/test split at patient level (80/20 + 50 independent test cases)
-
-2. Clinical Tabular Dataset – Kaggle CVD Dataset
-
-70,000 patient records
-
-12 features: age, BP, cholesterol, glucose, BMI, lifestyle habits
-
-Cleaning & preparation:
-
-Age converted from days → years
-
-Categorical values encoded
-
-BMI engineered from height & weight
-
-Outlier removal for BP
-
-Full univariate, bivariate, and multivariate analysis
 
 # Models Implemented
 A. Machine Learning on Clinical Data
