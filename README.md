@@ -65,11 +65,12 @@ B. Deep Learning on MRI Data
 
 # Results Summary
 
- | Metric                | Value      |
-|-----------------------|------------|
-| **Training Accuracy** | 83.45%     |
-| **Validation Accuracy** | 76.65%   |
-| **Test Accuracy**       | 76.60%   |
+| **MRI Classification – 3D-CNN** | **Value** |
+|----------------------------------|-----------|
+| **Training Accuracy**            | 83.45%    |
+| **Validation Accuracy**          | 76.65%    |
+| **Test Accuracy**                | 76.60%    |
+
 
 
 Strengths:
