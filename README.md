@@ -72,6 +72,14 @@ B. Deep Learning on MRI Data
 | **Test Accuracy**                | 76.60%    |
 
 
+| **Clinical Tabular Data -Model**            | Train Accuracy (%) | Validation Accuracy (%) | Test Accuracy (%) |
+|---------------------------------------------|--------------------|-------------------------|--------------------|
+| Naive Bayes               | 75              | 70                     | 68              |
+| Logistic Regression        | 85              | 82                     | 80              |
+| K-Nearest Neighbors (k=5) | 90              | 78                     | 76              |
+| XGBoost                    | 95              | 90                     | 88              |
+
+
 
 Strengths:
 
