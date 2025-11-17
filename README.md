@@ -11,15 +11,15 @@ The study compares classical Machine Learning models for clinical data and a 3D 
 
 # Team Members
 
-Garima Patwal – H00509869
+Garima Patwal
 
-Mitalikumari Pradipbhai Patel – H00522099
+Mitalikumari Pradipbhai Patel 
 
-Huda Shaikh – H00506370
+Huda Shaikh
 
-Syeda Urooj Fathima – H00511143
+Syeda Urooj Fathima
 
-Seema Aashikab Anees – H00521785
+Seema Aashikab Anees
 
 # Project Overview
 
