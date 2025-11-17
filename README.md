@@ -81,18 +81,6 @@ B. Deep Learning on MRI Data
 
 
 
-Strengths:
-
-High correctness for Normal and ARV classes
-
-Balanced precision, recall & F1 across all five classes
-
-Limitations:
-
-Moderate overfitting
-
-Overlap between cardiomyopathy subtypes (DCM–HCM)
-
 # Clinical Data Classification
 
 | Model                   | Performance Summary                                                        |
