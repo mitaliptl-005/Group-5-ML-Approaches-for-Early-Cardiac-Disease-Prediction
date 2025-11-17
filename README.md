@@ -51,30 +51,26 @@ A. Machine Learning on Clinical Data
 
 B. Deep Learning on MRI Data
 
-A 3D-CNN designed for volumetric classification:
+ | Component | Description |
+|----------|-------------|
+| **Model Type** | 3D-CNN for volumetric classification |
+| **Convolutional Blocks** | 4 blocks, each with Conv3D → BatchNorm3D → MaxPool3D |
+| **Pooling Layer** | AdaptiveAvgPool3D for global spatial compression |
+| **Classifier** | Fully Connected layers with Dropout |
+| **Training Epochs** | 100 epochs |
+| **Optimizer** | AdamW |
+| **Learning Rate Scheduler** | Cosine Annealing |
+| **Loss Function** | Cross-Entropy Loss with Label Smoothing |
 
-4 convolutional blocks with BatchNorm + MaxPool
-
-AdaptiveAvgPool3D for global spatial compression
-
-Fully connected classifier with dropout
-
-Trained for 100 epochs using:
-
-AdamW optimizer
-
-Cosine Annealing scheduler
-
-Cross-Entropy Loss with label smoothing
 
 # Results Summary
-MRI Classification – 3D-CNN
 
-Training Accuracy: 83.45%
+ | Metric                | Value      |
+|-----------------------|------------|
+| **Training Accuracy** | 83.45%     |
+| **Validation Accuracy** | 76.65%   |
+| **Test Accuracy**       | 76.60%   |
 
-Validation Accuracy: 76.65%
-
-Test Accuracy: 76.60%
 
 Strengths:
 
@@ -95,7 +91,7 @@ Overlap between cardiomyopathy subtypes (DCM–HCM)
 | **Naive Bayes**         | Weakest; high false negatives                                              |
 | **Logistic Regression** | Balanced and stable                                                        |
 | **KNN**                 | Good detection but overpredicts positive cases                             |
-| **XGBoost**             | ⭐ **Best model (~88% accuracy)**; high precision & recall for both classes |
+| **XGBoost**             | **Best model (~88% accuracy)**; high precision & recall for both classes |
 
 # Visualizations Included
 
