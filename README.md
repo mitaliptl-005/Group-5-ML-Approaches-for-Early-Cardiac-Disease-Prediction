@@ -134,15 +134,15 @@ Apply uncertainty estimation for safer clinical use
 
 # Technologies Used
 
-Python, NumPy, Pandas, Scikit-Learn
+**Python, NumPy, Pandas, Scikit-Learn
 
-PyTorch for 3D-CNN
+**PyTorch for 3D-CNN
 
-Matplotlib / Seaborn for visualisation
+**Matplotlib / Seaborn for visualisation
 
-XGBoost library
+**XGBoost library
 
-GPU acceleration for deep learning
+**GPU acceleration for deep learning
 
 
 
